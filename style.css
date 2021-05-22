@@ -43,7 +43,13 @@ a:hover {
     padding-left: 0;
     padding-right: 0;
 }
-
+.bloc-2-citation{
+    font-size: 1.2em;
+    font-style: italic;
+}
+blockquote{
+    margin: 0;
+}
 .bloc-lg {
     padding: 100px 50px;
 }
