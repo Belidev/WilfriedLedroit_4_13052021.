@@ -8,12 +8,12 @@
 
 html {
     font-family: sans-serif;
-    -webkit-text-size-adjust: 200%;
-    -ms-text-size-adjust: 200%
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 article,
@@ -1429,7 +1429,9 @@ figure {
 img {
     vertical-align: middle
 }
-
+.keywords{
+    color: white;
+}
 .carousel-inner>.item>a>img,
 .carousel-inner>.item>img,
 .img-responsive,
