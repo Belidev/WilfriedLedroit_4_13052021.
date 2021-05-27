@@ -1660,7 +1660,7 @@ mark {
 }
 
 .text-center {
-    text-align: center
+    text-align: center;
 }
 
 .text-justify {
@@ -3693,6 +3693,7 @@ textarea.input-lg {
 .btn:hover {
     color: #333;
     text-decoration: none
+
 }
 
 .btn.active,
@@ -4852,7 +4853,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a:focus,
 .nav>li>a:hover {
     text-decoration: none;
-    background-color: #eee
+    background-color: #eee;
+    font-weight: bold;
 }
 
 .nav>li.disabled>a {

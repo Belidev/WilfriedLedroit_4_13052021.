@@ -277,7 +277,6 @@ blockquote{
 .voffset-lg {
     margin-top: 80px;
 }
-
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -323,7 +322,6 @@ blockquote{
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
     float: right;
     z-index: 1;
 }
@@ -372,7 +370,7 @@ blockquote{
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 100px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -515,7 +513,6 @@ button {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
-
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -661,7 +658,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: auto;
 }
 
 .hero-bloc-text {
@@ -683,12 +680,12 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
-    margin: auto auto auto auto;
+    max-width:max-content;
+    margin: auto auto 15px auto;
 }
 
 .h1 {
@@ -711,7 +708,7 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.4em;
 }
 
@@ -790,6 +787,10 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
+    background: hsl(23, 66%, 70%)!important;
+    color: #FFFFFF!important;
+}
+.btn-atomic-tangerine:focus{
     background: hsl(23, 66%, 70%)!important;
     color: #FFFFFF!important;
 }
