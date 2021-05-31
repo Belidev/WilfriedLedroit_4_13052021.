@@ -160,6 +160,22 @@ blockquote{
 .d-bloc p a:hover {
     color: rgba(255, 255, 255, 1);
 }
+.d-bloc .a-btn:focus,
+.d-bloc .navbar a:focus,
+.d-bloc .navbar-brand:focus,
+.d-bloc a:focus .icon-sm,
+.d-bloc a:focus .icon-md,
+.d-bloc a:focus .icon-lg,
+.d-bloc a:focus .icon-xl,
+.d-bloc h1 a:focus,
+.d-bloc h2 a:focus,
+.d-bloc h3 a:focus,
+.d-bloc h4 a:focus,
+.d-bloc h5 a:focus,
+.d-bloc h6 a:focus,
+.d-bloc p a:focus{
+    color: white;
+}
 
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
@@ -487,8 +503,11 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    margin : 5px 0 5px 0;
 }
-
+.icon-md:focus{
+    color: white;
+}
 .icon-lg {
     font-size: 60px!important;
 }
@@ -562,8 +581,29 @@ a[data-lightbox]:hover::before {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-
+a[data-lightbox]:focus::before {
+    content: "+";
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .6);
+    color: #FFF;
+    font-weight: 100;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
 a[data-lightbox]:hover img {
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+}
+a[data-lightbox]:focus img {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
@@ -662,11 +702,6 @@ a {
     font-weight: 400;
     color: #575757!important;
 }
-
-.container {
-    max-width: auto;
-}
-
 .hero-bloc-text {
     font-size: 38px;
 }
@@ -709,7 +744,6 @@ p {
 }
 
 .social {
-    max-width: 400px;
     margin: auto auto auto auto;
 }
 
@@ -866,13 +900,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -890,10 +924,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -902,8 +932,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 

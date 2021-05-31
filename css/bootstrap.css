@@ -1431,6 +1431,9 @@ img {
 }
 .keywords{
     color: white;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 25px;
 }
 .carousel-inner>.item>a>img,
 .carousel-inner>.item>img,
@@ -1441,7 +1444,7 @@ img {
     max-width: 100%;
     height: auto
 }
-
+                            
 .img-rounded {
     border-radius: 6px
 }
